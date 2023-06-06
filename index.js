@@ -22,10 +22,16 @@ const gradient = {
     night: `linear-gradient(${colors.slice(6)})`
 }
 // Modify the colorChange function to accept a parameter representing the current time. This allows you to reuse the function with different time values
-function colorChange(currentTime){
+function colorChange(){
+    let currentTime = (Date.now() - startTime) / 1000;
+
     (currentTime >= 15 && currentTime <= 30) ? document.body.style.background = gradient.morning :
     (currentTime > 30 && currentTime < 45 ) ? document.body.style.background = gradient.afternoon :
     document.body.style.background = gradient.night;
+    console.log( currentTime);
 
-
+    setTimeout(colorChange, 1000);
 }
+// Instead of using new Date().getSeconds() to get the current time, consider using Date.now() to get the current timestamp in milliseconds. This provides a more accurate and precise time value
+let startTime = Date.now();
+colorChange();
