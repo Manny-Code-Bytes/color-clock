@@ -1,3 +1,17 @@
+:root {
+    --c1: #efd9af;
+    --c2: #b5d2e1;
+    --c3: #f3e1eb;
+
+    --c4: #fceac7;
+    --c5: #a0ced9;
+    --c6: #ffc8dd;
+
+    --c7: #1c253c;
+    --c8: #626fa1;
+    --c9: #9b90c2;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
