@@ -17,9 +17,9 @@ const colors = [
 ];
 // Update the gradient object to use the colors array. This way, you can easily add or remove colors without modifying the code
 const gradient = {
-    morning: `linear-gradient(${colors.slice(0,3)})`,
-    afternoon: `linear-gradient(${colors.slice(3,6)})`,
-    night: `linear-gradient(${colors.slice(6)})`
+    morning: `linear-gradient(${colors.slice(0,3)} )`,
+    afternoon: `linear-gradient(${colors.slice(3,6)} )`,
+    night: `linear-gradient(${colors.slice(6)} )`
 }
 // Modify the colorChange function to accept a parameter representing the current time. This allows you to reuse the function with different time values
 function colorChange(){
